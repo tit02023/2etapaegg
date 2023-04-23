@@ -36,9 +36,10 @@ public class ParDeNumerosMain {
     System.out.println("los numeros a mostrar son N1: " + num.getN1());
     System.out.println("los numeros a mostrar son N2: " + num.getN2());
     //System.out.println(num.toString());
-    System.out.println("El mayor valor es: " + pdns.devolverMayor());
-    
-    System.out.println("La potencia es: " + pdns.calcularPotencia());
+    System.out.println("El mayor valor es: " + pdns.devolverMayor(num));
+    System.out.println("El menor valor es: " + pdns.devolverMenor(num));
+    System.out.println("La potencia es: " + pdns.calcularPotencia(num));
+    System.out.println("La raiz cuadrada es: " + pdns.calcularRaiz(num));
 }
     
 }

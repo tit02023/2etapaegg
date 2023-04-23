@@ -44,8 +44,8 @@ public class PersonaServicio {
         int edadNac = fechaNac.getYear();
         int fa = fechaAct.getYear();
         int edad = fa-edadNac;
-        System.out.println("La edad de la persona es: " + edad);
-        return edad;
+        //System.out.println("La edad de la persona es: " + edad);
+        return edad; // = fa-edadNac
     }
     //Método menorQue recibe como parámetro una Persona y una edad
     public boolean menorQue(Persona p, int edad){
@@ -55,14 +55,15 @@ public class PersonaServicio {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese la edad a consultar: ");
         int edadper = leer.nextInt();
-        if (edadper<edad) {
+        if (edadper < edad) {
             return true;
         }else {
             return false;
         }
     }
     
-    public void mostrarPersona(){
-        System.out.println("Los datos de la persona son: ");
+    public String mostrarPersona(Persona p){
+       //String per = p.getNombre() + p.getFechaNacimiento();
+       return p.getNombre() + " " + " " + p.getFechaNacimiento();
     }
 }
